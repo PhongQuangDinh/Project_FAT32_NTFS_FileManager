@@ -127,12 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Element.cpp" />
+    <ClCompile Include="Element.cpp" />
     <ClCompile Include="FAT32.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Element.h" />
+    <ClInclude Include="Element.h" />
     <ClInclude Include="FAT32.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

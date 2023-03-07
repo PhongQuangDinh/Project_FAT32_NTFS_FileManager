@@ -127,13 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\NTFS\NTFS\FAT32.cpp" />
-    <ClCompile Include="..\..\NTFS\NTFS\main.cpp" />
-    <ClCompile Include="..\..\NTFS\NTFS\NTFS.cpp" />
+    <ClCompile Include="FAT32.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="NTFS.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\NTFS\NTFS\Fat32.h" />
-    <ClInclude Include="..\..\NTFS\NTFS\NTFS.h" />
+    <ClInclude Include="Fat32.h" />
+    <ClInclude Include="NTFS.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

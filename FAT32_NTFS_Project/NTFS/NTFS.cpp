@@ -71,7 +71,7 @@ void ReadSect2(LPCWSTR disk, BYTE*& DATA, unsigned int _nsect)
     }
 }
 
-// Lấy number bytes từ vị trí offset
+// Lấy number bytes từ vị trí offset, remember to format USB into NTFS mode
 int64_t Get_Bytes(BYTE* sector, int offset, int number)
 {
     int64_t k = 0;

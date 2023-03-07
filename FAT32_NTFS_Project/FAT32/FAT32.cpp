@@ -152,6 +152,7 @@ void FAT32::Read_RDET(int sector_index, int level)
 {
     BYTE* RDET = new BYTE[512];
     this->Read_Sector(sector_index * 512, RDET, 512);
+    //this->Print_Sector(RDET);
     string file_name = "";
     int pointer = 2 * 32;
     do {
@@ -160,7 +161,6 @@ void FAT32::Read_RDET(int sector_index, int level)
             pointer = 0;
             sector_index += 1;
             this->Read_Sector(sector_index * 512, RDET, 512);
-
         }
         if (FAT32::Get_Value_Little_Endian(RDET, pointer + 0x0B, 1) == 0x00)
             break;
@@ -170,11 +170,17 @@ void FAT32::Read_RDET(int sector_index, int level)
         //Neu la entry chinh
         else if (FAT32::Get_Value_Little_Endian(RDET, pointer + 0x0B, 1) == 0x10 || FAT32::Get_Value_Little_Endian(RDET, pointer + 0x0B, 1) == 0x20)
         {
-            unsigned int first_cluster = Get_Value_Little_Endian(RDET, pointer + 26, 2); // cluster bat dau
+            //cout << "entry" << endl;
+            unsigned int first_cluster = Get_Value_Little_Endian(RDET, pointer + 0x1A, 2); // cluster bat dau
+            //unsigned int first_cluster = Get_Double_Value_Little_Endian(RDET, pointer + 0x1A,pointer + 0x14, 2);
+            //cout << first_cluster << endl;
             unsigned int last_cluster = first_cluster; // cluster ket thuc
-
             while (true)
-                if (Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFFF || Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFF8 || last_cluster == 0)
+                //cout << Get_Value_Little_Endian(FAT, last_cluster * 4, 4) << endl;
+                if (last_cluster >= 127) {
+                    break;
+                }
+                else if (Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFFF || Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFF8 || last_cluster == 0)
                     break;
                 else  if (Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFF7 || Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0)
                 {
@@ -182,7 +188,9 @@ void FAT32::Read_RDET(int sector_index, int level)
                     break;
                 }
                 else
+                {
                     last_cluster = Get_Value_Little_Endian(FAT, last_cluster * 4, 4);
+                }
 
             if (FAT32::Get_Value_Little_Endian(RDET, pointer + 0x0B, 1) == 0x10)
             {
@@ -240,8 +248,11 @@ void FAT32::Read_RDET(int sector_index, int level)
                 cout << endl;
             }
         }
-        else file_name = "";
+        else
+            file_name = "";
         pointer += 32;
+        //cout << "end" << endl; 
+        //cout << pointer << endl;
     } while (true);
 }
 void FAT32::Print_RDET()
