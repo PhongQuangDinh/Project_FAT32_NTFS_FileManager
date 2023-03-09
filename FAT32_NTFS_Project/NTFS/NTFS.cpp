@@ -45,7 +45,6 @@ int ReadSector(LPCWSTR drive, int readPoint, BYTE*& sector)
 void ReadSect2(LPCWSTR disk, BYTE*& DATA, unsigned int _nsect)  
 {
     DWORD dwBytesRead(0);
-
     HANDLE hFloppy = NULL;
     hFloppy = CreateFile(disk,    // Floppy drive to open
         GENERIC_READ,              // Access mode
@@ -306,17 +305,17 @@ void read_MFT(unsigned int MFTStart, unsigned int sectors_per_cluster, LPCWSTR d
     ReadSect2(disk, MFT, MFTStart);
 
     // INFORMATION
-    int Entry_in4 = Get_Bytes(MFT, 0x014, 2);
+    unsigned int Entry_in4 = Get_Bytes(MFT, 0x014, 2);
     cout << "Attribute $INFORMATION Entry starts at: " << Entry_in4 << endl;
 
-    int len_in4 = Get_Bytes(MFT, 0x048, 4);
+    unsigned int len_in4 = Get_Bytes(MFT, 0x048, 4);
     cout << "Length of INFOR Entry: " << len_in4 << endl;
 
     // FILE NAME
-    int Entry_Name = Entry_in4 + len_in4;
+    unsigned int Entry_Name = Entry_in4 + len_in4;
     cout << "Attribute $FILE NAME Entry starts at: " << Entry_Name << endl;
 
-    int len_Name = Get_Bytes(MFT, 0x09C, 4);
+    unsigned int len_Name = Get_Bytes(MFT, 0x09C, 4);
     cout << "Length of $FILE NAME Entry: " << len_Name << endl;
 
     // DATA
@@ -347,7 +346,7 @@ void read_MFT(unsigned int MFTStart, unsigned int sectors_per_cluster, LPCWSTR d
 // xử lí cây thư mục
 void folder_Tree(unsigned int len_MFT, unsigned int MFTStart, LPCWSTR disk)
 {
-    for (int i = 2; i < len_MFT - MFTStart; i += 2)
+    for (int i = 0; i < len_MFT - MFTStart; i += 2)
     {       
         int currentSector = MFTStart + i;
         BYTE* currentEntry = new BYTE[512];
@@ -375,16 +374,14 @@ void folder_Tree(unsigned int len_MFT, unsigned int MFTStart, LPCWSTR disk)
                     startData += len_obj;
                     Read_Entry_DATA(currentEntry, startData);
                 }
-                else
+                else if (Get_Bytes(currentEntry, startData, 4) == 128)
                 {
-                    while (Get_Bytes(currentEntry, startData, 4) != 128) // Tìm sector dấu hiệu của DATA
-                    {
-                        startData += 4;
-                    }
-
+                    //while (Get_Bytes(currentEntry, startData, 4) != 128) // Tìm sector dấu hiệu của DATA
+                    //{
+                    //    startData += 4;
+                    //}
                     Read_Entry_DATA(currentEntry, startData);
                 }
-
                 fileID.push_back(ID);               
             }
         }

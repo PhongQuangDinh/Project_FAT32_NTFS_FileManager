@@ -25,6 +25,8 @@ private:
     BYTE* FAT;
     BYTE* BootSector;
     vector<Element> list_file;
+
+    Component Tree_File;
 public:
     FAT32();
     FAT32(LPCWSTR drive);

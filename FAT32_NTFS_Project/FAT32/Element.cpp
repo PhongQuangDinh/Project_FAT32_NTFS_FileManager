@@ -26,7 +26,7 @@ string Element::getName()
 
 void Element::getElement()
 {
-	cout << Element::tabLevel(this->level) << this->name;
+	cout << tabLevel(this->level) << "+--" << this->name;
 	if (this->size > 0)
 		cout << " -ID: " << this->first_sector;
 	cout << endl;
@@ -48,8 +48,21 @@ Element::Element(string name, int first_sector,int level, int size )
 
 string Element::tabLevel(int level)
 {
-	string tab = "";
+	string tab = " ";//(level > 0) ? "|" : "";
+	bool good = (level > 0);
+	int cnt = 1;
 	for (int i = 0; i < level; i++)
-		tab += "\t";
+	{
+		if (good)
+		{
+			cnt--;
+			if (cnt <= 0)
+			{
+				cnt = 1;
+				tab += "|";
+			}
+		}
+		tab += "   ";
+	}
 	return tab;
 }

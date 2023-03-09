@@ -1,5 +1,4 @@
 ﻿#include "FAT32.h"
-
 FAT32::FAT32()
 {
     LPCWSTR drive = L"////.//E:";
@@ -177,10 +176,7 @@ void FAT32::Read_RDET(int sector_index, int level)
             unsigned int last_cluster = first_cluster; // cluster ket thuc
             while (true)
                 //cout << Get_Value_Little_Endian(FAT, last_cluster * 4, 4) << endl;
-                if (last_cluster >= 127) {
-                    break;
-                }
-                else if (Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFFF || Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFF8 || last_cluster == 0)
+                if (Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFFF || Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFF8 || last_cluster == 0 || last_cluster >= 128 || first_cluster == 128)
                     break;
                 else  if (Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0x0FFFFFF7 || Get_Value_Little_Endian(FAT, last_cluster * 4, 4) == 0)
                 {
@@ -219,7 +215,6 @@ void FAT32::Read_RDET(int sector_index, int level)
 
                 if (Get_Value_Little_Endian(RDET, pointer + 28, 4) == 0)
                     this->Read_RDET((first_cluster - 2) * this->sectors_per_cluster + this->first_sector_of_data, level + 1);
-
             }
             else  if (FAT32::Get_Value_Little_Endian(RDET, pointer + 0x0B, 1) == 0x20)
             {
@@ -265,10 +260,9 @@ void FAT32::Print_RDET()
 void FAT32::Print_Directory_File_Tree()
 {
     cout << "\n------------------------------------------------------------------------------------------------\n";
-
     cout << "\t \t\ \t \t \t \t CAY THU MUC : \n\n";
     for (int i = 0; i < this->list_file.size(); i++)
-        this->list_file[i].getElement();
+        list_file[i].getElement();
 }
 // Doc data cua sector
 string FAT32::Read_Sector_Data(int index)
@@ -328,7 +322,6 @@ void FAT32::MENU()
         cout << "Ban muon mo file khac ?(y/n)";
         cin >> check;
     }
-
 }
 void FAT32::Print_BootSector()
 {
