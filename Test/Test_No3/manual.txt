@@ -1,0 +1,119 @@
+To format a hard drive means to erase any information on the drive and to set up a file system so your operating system can read data from the drive and write data to the drive. You need to format a hard drive if you plan on using it in Windows.
+
+How to Format a Hard Drive in Windows
+Follow these easy steps to format a hard drive in Windows 11, Windows 10, Windows 8, Windows 7, Windows Vista, or Windows XP:
+
+If the hard drive you want to format has never been used or was just wiped clean, you need to partition the hard drive. Once partitioned, return to this page for help formatting the drive.
+
+Open Disk Management, the hard drive manager included with all versions of Windows.
+
+diskmgmt.msc in Windows search field
+Opening Disk Management can be done a number of ways depending on your version of Windows, but the easiest method is to type diskmgmt.msc in the Run dialog box or the Start menu.
+
+Another way to open Disk Management is through Control Panel.
+
+After Disk Management opens, which might take several seconds, look for the drive you want to format from the list at the top. There's a lot of information in this tool, so if you can't see everything, maximize the window.
+
+Backup Drive (F:) in Disk Management list
+Look for the amount of storage on the drive as well as the drive name. For example, if it says Music for the drive name and it has 2 GB of hard drive space, then you've likely selected a small flash drive full of music.
+
+Feel free to open the drive to make sure that it's what you want to format if it makes you confident that you're going to format the right device.
+
+If you don't see the drive listed on the top or an Initialize Disk windows appears, it probably means that the hard drive is new and has not yet been partitioned. Partitioning is something that must be done before a hard drive is formatted.
+
+Now that you've found the drive you want to format, right-click it and choose Format to open the disk-formatting wizard.
+
+Format submenu in Disk Management list
+Now is as good a time as any to remind you that you really, really, really need to make sure that this is the right drive. You certainly don't want to format the wrong hard drive.
+
+Existing Drive: If you're formatting a drive that you've been using and that has data on it, double-check in Explorer that the drive letter you're choosing here in Disk Management is the same as the one you see in Explorer that has the information on it that you want to erase. Once formatted, the existing data on the disk are probably unrecoverable for most people.
+New Drive: If you're formatting a new drive, a great way to tell that it's the right one is to look at the File System column in the top part of Disk Management. Your existing drives will show file systems of NTFS or FAT32, but a new, unformatted drive will show RAW instead.
+You cannot format your C drive, or whatever drive Windows is installed on, from within Windows. In fact, the Format option isn't even enabled for the drive with Windows on it.
+
+The first of several formatting details which we'll cover over the next several steps is the volume label, which is essentially a name given to the hard drive.
+
+In the Volume label textbox, enter whatever name you'd like to give to the drive.
+
+Format F: drive dialog in Disk Management
+If the drive had a previous name and that makes sense for you, by all means, keep it.
+
+Drive letters are assigned during the Windows partitioning process but can easily be changed after the format is complete. You can change drive letters after the formatting process is done if you'd like.
+
+Next up is the file system choice. In the File system textbox, choose NTFS.
+
+NTFS dropdown menu in Disk Management
+NTFS is the most recent file system available and is almost always the best choice. Only choose FAT32 (FAT—which is actually FAT16—isn't available unless the drive is 2 GB or smaller) if you are specifically told to do so by a program's instructions that you're planning on using on the drive. This is not common.
+
+In the Allocation unit size textbox, choose Default. The best allocation size based on the size of the hard drive will be chosen.
+
+Default drop down menu in Format F: dialog
+It's not at all common to set a custom allocation unit size when formatting a hard drive in Windows.
+
+Next is the Perform a quick format checkbox. Windows will check this box by default, suggesting that you do a "quick format" but we recommend that you uncheck this box so that a "standard format" is performed.
+
+Unchecked "Perform a quick format" option in Format F: in Disk Management
+In a standard format, each individual "part" of the hard drive, called a sector, is checked for errors and overwritten with a zero—a sometimes painfully slow process. This procedure ensures that the hard drive is physically working as expected, that each sector is a reliable place to store data, and that existing data is unrecoverable.
+
+In a quick format, this bad sector search and basic data sanitization is skipped entirely and Windows assumes that the hard drive is free of errors. A quick format is very fast.
+
+You, of course, can do whatever you like—either method will get the drive formatted. However, especially for older and brand new drives, we'd prefer to take our time and do the error checking right now instead of letting our important data do the testing for us later on. The data sanitization aspect of a full format is nice, too, if you're planning on selling or disposing of this drive.
+
+The final format option is the Enable file and folder compression setting that is unchecked by default, which we recommend sticking with.
+
+Unchecked "Enable file and folder compression checkbox in Format F: dialog in Disk management
+The file and folder compression feature allows you to choose files or folders to be compressed and decompressed on the fly, potentially offering considerable savings on hard drive space. The downside here is that performance can be equally affected, making your day-to-day Windows use much slower than it would be without compression enabled.
+
+File and folder compression has little use in today's world of very large and very inexpensive hard drives. In all but the rarest occasions, a modern computer with a large hard drive is better off protecting all the processing power it can and skipping on the hard drive space savings.
+
+Review the settings you've made in the last several steps and then click OK.
+
+OK button in Format F: dialog for Disk Management
+As a reminder, here's what you should see:
+
+Volume label: [label of your choosing]
+File system: NTFS
+Allocation unit size: Default
+Perform a quick format: unchecked
+Enable file and folder compression: unchecked
+Look back at whatever previous steps you need to if you're wondering why these are the best options.
+
+Windows is usually pretty good about warning you before you might do something damaging, and a hard drive format is no exception.
+
+Click OK to the warning message about formatting the drive.
+
+OK button on Formatting warning dialog box
+Just as the warning says, all the information on this drive will be erased if you click OK. You can't cancel the format process halfway through and expect to have half of your data back. As soon as this starts, there's no going back. There's no reason for this to be scary but we do want you to understand the finality of a format.
+
+The hard drive format has begun! You can check the progress by watching the Formatting: xx% indicator under the Status column in the top part of Disk Management or in the graphical representation of your hard drive in the bottom section.
+
+Formatting: 72% in Disk Management
+If you chose a quick format, your hard drive should only take several seconds to format. If you chose the standard format, which we suggested, the time it takes the drive to format will depend almost completely on the size of the drive. A small drive will take a small amount of time to format and a very large drive will take a very long time to format.
+
+Your hard drive's speed, as well as your overall computer's speed, play some part but the size is the biggest variable.
+
+Disk Management in Windows won't flash a big "Your Format is Complete!" message, so after the format percentage indicator reaches 100%, wait a few seconds and then check again under Status and make sure it's listed as Healthy like your other drives.
+
+Healthy (Primary) New Drive in Disk Management
+You may notice that now that the format is complete, the volume label has changed to what you set it as (New Drive in our case) and the % Free is listed at 100%. There's a little overhead involved so don't worry if your drive isn't completely empty.
+
+That's it! Your hard drive has been formatted and it's ready for use in Windows. You can use the new drive however you want—back up files, store music, and videos, etc.
+
+If you'd like to change the drive letter assigned to this drive, now is the best time to do that.
+
+New Drive (F:) in Windows 10 File Explorer
+Formatting Deletes Data, But Doesn't Always Erase It
+When you format a drive in Windows, data may or may not truly be erased. Depending on your version of Windows, and the type of format, it's possible the data is still there, hidden from Windows and other operating systems but still accessible in certain situations. There is technically a difference between deleting and erasing a drive.
+
+More on Formatting Hard Drives in Windows
+If you want to format your hard drive so you can install Windows again from scratch, your hard drive will be automatically formatted as part of that process. You can also format a hard drive via Command Prompt using the format command.
+
+FAQ
+How do I format an external hard drive?
+The steps for formatting hard drives are the same whether they are internal or external: connect the external hard drive to your computer and select it in the Disk Management tool.
+How do I completely erase my hard drive?
+To completely erase a hard drive, use free data destruction software, use a degausser, or physically destroy the drive.
+
+Why can't I format a drive on my computer?
+
+
+If you can't format a drive, it could have a virus, or you might need to repair bad sectors. You can try formatting the drive from the Command Prompt as an alternative.
