@@ -1,0 +1,30 @@
+﻿  Element.cpp
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\Element.cpp(38,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  FAT32.cpp
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.h(10,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(9,60): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(10,63): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(11,65): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(12,59): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(13,93): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(14,58): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(25,53): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(26,56): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(27,58): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(28,52): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(29,86): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(30,51): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(173,40): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(188,59): warning C4244: '=': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(201,47): warning C4018: '<=': signed/unsigned mismatch
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(208,98): warning C4018: '<=': signed/unsigned mismatch
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(223,147): warning C4244: 'argument': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(230,47): warning C4018: '<=': signed/unsigned mismatch
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(237,98): warning C4018: '<=': signed/unsigned mismatch
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(256,13): warning C4129: ' ': unrecognized character escape sequence
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(263,13): warning C4129: ' ': unrecognized character escape sequence
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.cpp(329,13): warning C4129: ' ': unrecognized character escape sequence
+  main.cpp
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\FAT32\FAT32.h(10,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  FAT32.vcxproj -> D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\x64\Debug\FAT32.exe

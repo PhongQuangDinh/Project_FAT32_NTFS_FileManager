@@ -1,6 +1,5 @@
 ﻿#include "NTFS.h"
-
-int main(int argc, char** argv)
+int main()
 {
     // xử lí nhập tên ổ đĩa
     wstring disk_name;

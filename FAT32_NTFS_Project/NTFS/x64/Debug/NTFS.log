@@ -1,0 +1,37 @@
+﻿  main.cpp
+  NTFS.cpp
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(108,13): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(110,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(112,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(130,11): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(133,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(135,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(158,11): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(160,18): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(165,17): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(172,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(203,11): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(205,15): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(208,11): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(212,17): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(213,18): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(279,32): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(280,35): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(281,33): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(282,29): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(283,24): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(284,30): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(307,25): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(310,23): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(317,24): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(321,10): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(324,38): warning C4244: '=': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(326,16): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(332,16): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(337,23): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(348,20): warning C4018: '<': signed/unsigned mismatch
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(356,11): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(360,20): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS\NTFS.cpp(369,18): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+  Generating Code...
+  NTFS.vcxproj -> D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\x64\Debug\NTFS.exe

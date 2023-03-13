@@ -24,6 +24,7 @@
     <ProjectGuid>{fa9da98b-b005-499d-9028-e45fd6479ed0}</ProjectGuid>
     <RootNamespace>NTFS</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>NTFS_sup</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,12 +128,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FAT32.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NTFS.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Fat32.h" />
     <ClInclude Include="NTFS.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
