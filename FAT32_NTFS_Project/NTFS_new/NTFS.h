@@ -32,8 +32,8 @@ class NTFS_BoostSector
 	} boot_sec;
 public:
 
-	void Read(BYTE sector[512]) { readFile((char*)&boot_sec, sector, sizeof(NTFS_BoostSector)); }
-	DWORD getFstMTFSec() { return boot_sec.MFTClus; }
+	void ReadBS(BYTE sector[512]) { readFile((char*)&boot_sec, sector, sizeof(NTFS_BoostSector)); }
+	DWORD getFstMFTSec() { return boot_sec.MFTClus; }
 	UINT16 getBytePerSec() { return boot_sec.bytePerSec; }
 	UINT16 getSecPerClus() { return boot_sec.secPerClus; }
 	UINT16 getClusPerRecord() { return pow(2, abs(boot_sec.clusPerRecord)); }

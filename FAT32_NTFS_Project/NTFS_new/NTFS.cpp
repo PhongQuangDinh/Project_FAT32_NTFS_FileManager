@@ -2,6 +2,7 @@
 void NTFS_BoostSector::PrintBootSector()
 {
 	cout << "<----------- Boot Sector NTFS ----------->" << endl;
+	cout << "Ten OEM: " << boot_sec.oemID << endl;
 	cout << "Bytes per Sector: " << boot_sec.bytePerSec << endl;
 	cout << "Sectors per Cluster: " << (int)boot_sec.secPerClus << endl;
 	cout << "Sectors per Track: " << (int)boot_sec.secPerTrk << endl;
@@ -29,13 +30,13 @@ bool NTFS::Init(LPCWSTR drive)
 	if (status != 0) return false;
 
 	ReadSector(0, sec);
-	BSector.Read(sec);
+	BSector.ReadBS(sec);
 	BSector.getFileSystem();
 	if (BSector.getFileSystem().find("NTFS") == string::npos) return false;
 
 	SecPerClus = BSector.getSecPerClus();
 	BytePerSec = BSector.getBytePerSec();
-	FstMTF = BSector.getFstMTFSec() * SecPerClus;
+	FstMTF = BSector.getFstMFTSec() * SecPerClus;
 	BytePerRecord = BSector.getClusPerRecord();
 	RootEntry = new Folder(ROOT_FILE_NAME_INDEX);
 	RootEntry->Sector = FstMTF + ROOT_FILE_NAME_INDEX * 2;
@@ -228,7 +229,7 @@ void NTFS::PrintDataEntry(wstring NameFile)
 	{
 		cout << "<---------- Cay thu muc con ---------->\n";
 		entry->printFolderTree();
-		cout << "<---------- Cay thu muc me ---------->\n";
+		cout << "<---------- Cay thu muc chi tiet ---------->\n";
 		entry->PrintInfoEntry();
 	}
 }

@@ -1,16 +1,7 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (NTFS_new.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  main.cpp
-D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\NTFS.h(36,40): warning C4244: 'return': conversion from 'LONGLONG' to 'DWORD', possible loss of data
-D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\NTFS.h(39,40): warning C4244: 'return': conversion from 'double' to 'UINT16', possible loss of data
-  MFT.cpp
-D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\MFT.cpp(25,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\MFT.cpp(31,15): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
-D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\MFT.cpp(33,19): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
-D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\MFT.cpp(87,31): warning C4101: 'headAttr2': unreferenced local variable
   NTFS.cpp
 D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\NTFS.h(36,40): warning C4244: 'return': conversion from 'LONGLONG' to 'DWORD', possible loss of data
 D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\NTFS.h(39,40): warning C4244: 'return': conversion from 'double' to 'UINT16', possible loss of data
-D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\NTFS.cpp(205,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\NTFS.cpp(282,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\NTFS.cpp(206,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\NTFS_new\NTFS.cpp(283,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   NTFS_new.vcxproj -> D:\COLLEGE\Operation System\FAT32_NTFS-master\FAT32_NTFS_Project\x64\Debug\NTFS.exe
